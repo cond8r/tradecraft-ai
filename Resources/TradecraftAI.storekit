@@ -1,0 +1,60 @@
+{
+  "identifier" : "com.fangduo.tradecraftai.storekit",
+  "nonConsumableProducts" : [],
+  "consumableProducts" : [],
+  "subscriptionGroups" : [
+    {
+      "id" : "TRADECRAFT_PRO",
+      "localizations" : [],
+      "name" : "TradecraftAI Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [],
+          "introductoryOffer" : {
+            "duration" : "P7D",
+            "paymentMode" : "freeTrial",
+            "periodCount" : 1,
+            "type" : "introductory"
+          },
+          "localizations" : [
+            {
+              "description" : "Full access to all TradecraftAI AI features",
+              "displayName" : "TradecraftAI Pro Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.fangduo.tradecraftai.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Pro Monthly",
+          "subscriptionGroupID" : "TRADECRAFT_PRO",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [],
+          "introductoryOffer" : {
+            "duration" : "P7D",
+            "paymentMode" : "freeTrial",
+            "periodCount" : 1,
+            "type" : "introductory"
+          },
+          "localizations" : [
+            {
+              "description" : "Full access to all TradecraftAI AI features",
+              "displayName" : "TradecraftAI Pro Yearly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.fangduo.tradecraftai.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Pro Yearly",
+          "subscriptionGroupID" : "TRADECRAFT_PRO",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

@@ -1,0 +1,32 @@
+name: TradecraftAI
+options:
+  bundleIdPrefix: com.fangduo
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "15"
+
+targets:
+  TradecraftAI:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+      - path: Resources/Assets.xcassets
+    resources:
+      - path: Resources/Info.plist
+      - path: Resources/TradecraftAI.storekit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.fangduo.tradecraftai
+        SWIFT_VERSION: 5.9
+        INFOPLIST_FILE: Resources/Info.plist
+        DEVELOPMENT_TEAM: R7UJ6NVP79
+        CODE_SIGN_ENTITLEMENTS: Resources/TradecraftAI.entitlements
+        CODE_SIGN_STYLE: Automatic
+        TARGETED_DEVICE_FAMILY: "1"
+    dependencies:
+      - sdk: Foundation.framework
+      - sdk: AVFoundation.framework
+      - sdk: PhotosUI.framework
+      - sdk: StoreKit.framework
+      - sdk: SwiftData.framework
